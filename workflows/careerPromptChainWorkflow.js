@@ -1,5 +1,5 @@
 // =============================================================================
-// Career Path PROMPT CHAIN WORKFLOW
+// Career Path — PROMPT CHAIN WORKFLOW
 // -----------------------------------------------------------------------------
 // This is a WORKFLOW, not an agent:
 //   - The steps and their order are hard-coded by US (the developer).

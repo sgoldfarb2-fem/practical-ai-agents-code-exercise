@@ -169,9 +169,9 @@ async function runCareerWorkflow(userInput) {
 const userInput = process.argv[2] || "I love animals and science. I dislike sitting at a desk all day.";
 
 runCareerWorkflow(userInput)
-  .then((plan) => {
+  .then((finalPlan) => {
     console.log("========== FINAL RESULT ==========");
     console.log(`User input: ${userInput}\n`);
-    console.log(plan);
+    console.log(finalPlan);
   })
   .catch((err) => console.error("Workflow failed:", err.message));

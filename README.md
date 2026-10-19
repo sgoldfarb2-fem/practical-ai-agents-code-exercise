@@ -35,6 +35,7 @@ Every file takes an optional input string and falls back to the sample input abo
 ## Things to know
 
 - **The LLM is faked.** Each file's `callLLM` returns scripted responses so every example runs with no API key and no network. Each one has a `REPLACE` comment showing where to put a real API call, and the same goes for the fake tools (`search_careers`, `get_career_requirements`, and so on).
+- **The fake answers are canned.** Most scripts always return the Wildlife Biologist example no matter what you type. Only the routing, dispatcher, and orchestrator-workers examples react to the input, so you can see them pick different paths. Plug in a real LLM to get answers for any input.
 - **API keys:** `API_KEY` is a placeholder. In a real app, load it from an environment variable and never commit a real key.
 - **Safety limits:** loops are always bounded (`MAX_LOOPS`, `MAX_STEPS`, `MAX_ROUNDS`) so a misbehaving agent can't run forever.
 - **Each file stands alone.** They're intentionally self-contained and don't import from each other, so you can read one top to bottom.

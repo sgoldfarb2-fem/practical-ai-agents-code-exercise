@@ -1,7 +1,7 @@
 // =============================================================================
-// Career Path — SEQUENTIAL MULTI-AGENT workflow
+// Career Path — SEQUENTIAL MULTI-AGENT system
 // -----------------------------------------------------------------------------
-// How this differs from the other two files:
+// How this differs from the other files:
 //   - careerPromptChainWorkflow.js: a workflow of single LLM CALLS (no tools, no loops).
 //   - careerReActAgent.js: ONE agent (ReAct loop) that does the whole job.
 //   - THIS FILE:      TWO separate agents, each with its own role, instructions,

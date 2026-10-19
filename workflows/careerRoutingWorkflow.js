@@ -75,7 +75,7 @@ async function callLLM(systemPrompt, userMessage) {
   // (A real LLM would understand the message; this just lets the demo run.)
   if (systemPrompt === ROUTER_PROMPT) {
     const text = userMessage.toLowerCase();
-    if (/\b(i'm a|i am a|my job|currently work|switch|change careers?)\b/.test(text) || text.includes("move into")) {
+    if (/\b(i'm an?|i am an?|my job|currently work|switch|change careers?)\b/.test(text) || text.includes("move into")) {
       return JSON.stringify({ route: "switch", reason: "The user already has a job and wants a different one." });
     }
     if (/\b(how (do|can) i become|how to become)\b/.test(text)) {

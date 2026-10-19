@@ -57,7 +57,7 @@ async function callLLM(agentName, messages) {
   if (agentName === "Dispatcher") {
     const text = messages[messages.length - 1].content.toLowerCase();
     let pick = ["Career Explorer", "The user describes likes and dislikes but names no career."];
-    if (/\b(i'm a|i am a|my job|currently work|switch|change careers?)\b/.test(text) || text.includes("move into")) {
+    if (/\b(i'm an?|i am an?|my job|currently work|switch|change careers?)\b/.test(text) || text.includes("move into")) {
       pick = ["Career Change Coach", "The user already has a job and wants a different one."];
     } else if (/\b(how (do|can) i become|how to become)\b/.test(text)) {
       pick = ["Roadmap Advisor", "The user names a specific career and asks how to reach it."];
