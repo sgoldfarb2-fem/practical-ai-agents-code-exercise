@@ -1,6 +1,6 @@
 # Practical AI Agent Workflows: Course Code
 
-Code repo for the **master.dev Practical AI Agent Workflows** course.
+Code repo for the **Master.dev Practical AI Agent Workflows** course. What the full course [on master.dev](https://master.dev/courses/ai-agent-workflows/).
 
 ## What we're building
 
@@ -40,3 +40,21 @@ Every file takes an optional input string and falls back to the sample input abo
 - **Safety limits:** loops are always bounded (`MAX_LOOPS`, `MAX_STEPS`, `MAX_ROUNDS`) so a misbehaving agent can't run forever.
 - **Each file stands alone.** They're intentionally self-contained and don't import from each other, so you can read one top to bottom.
 - **Every file has the same structure:** a header comment with a diagram, then setup, prompts or tools, the fake LLM call, the pattern itself, and an entry point.
+
+## Prompts from the Course
+
+### Prompt Chaining Lesson
+
+> I want to build an LLM powered workflow (not an agent and not agents). I want it to be a prompt chain workflow. I want to take a user input about a person's likes and dislikes and then an LLM will choose a career path for that user. Then we pass to the next step which is an LLM call that tells them the information on how to get to that career path (does it take a school, certification, or something else). Importantly again, this should be a workflow with LLMs not an agent or multiple agents. Please use JS, comment heavily, and fake the LLM calls and setup with comments on where we'd replace these keys and calls. Do this in one file and with as few lines as possible with keeping the code as clear as possible, l'd rather read more code than have chains of functions. Please feel free to ask any questions and look up prompt chaining workflows for correctness.
+
+
+### ReAct Workflow Lesson
+
+> Now I want to build a single ReAct (not multiple agents). I want it to take a user input about a person's likes and dislikes, and then an LLM step decides a career path for that user. Then we pass to the next information on how to get to that career path. Importantly again, this should be a single ReAct agent. Do this in a new file. Please use JS, comment heavily, and fake the LLM calls and setup with comments where we'd replace the real keys/calls. Do this in one file and with as few lines as possible while keeping the code easy to read. More lines is okay if it provides clarity. Please ask any questions you need to and look up ReAct agents to ensure correctness.
+
+
+### Sequential Agents Lesson
+
+>I want to build a multi-agent workflow. I want it to be a sequential workflow. I want it to take a user input about a person's likes and dislikes and then the agent decides a career path for that user. Then we pass to the next agent that tells them information on how to get to that career path (does it take school, certifications, etc). Importantly again, this should be a multi-agent setup, not a single agent or a workflow with LLMS. Make this in a new file. Please use JS, comment heavily, and fake the LLM calls and setup with comments where we'd replace the real keys/calls. Do this in one file in as few lines as possible unless more lines adds clarity. Please feel free to ask any questions and look up sequential multi-agent systems to ensure correctness.
+
+
